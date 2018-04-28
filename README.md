@@ -2,17 +2,17 @@ Using Laravel 5.5:-
 
 1. Create VirtualHost
 I have added ServerName assignment.localhost
-#<VirtualHost *:80>
-#    ServerAdmin webmaster@dummy-host2.example.com
-#    DocumentRoot "D:/wamp/www/assignment/public"
-#    ServerName assignment.localhost
-#    #SetEnv SITE_ENVIRONMENT LOCAL
-#    CustomLog "logs/dummy-host2.example.com-access.log" common
-#    <Directory "D:/wamp/www/assignment/public">
-#        Allow from all
-#        AllowOverride All
-#    </Directory>
-#</VirtualHost>
+
+ServerAdmin webmaster@dummy-host2.example.com
+DocumentRoot "D:/wamp/www/assignment/public"
+ServerName assignment.localhost
+#SetEnv SITE_ENVIRONMENT LOCAL
+CustomLog "logs/dummy-host2.example.com-access.log" common
+<Directory "D:/wamp/www/assignment/public">
+    Allow from all
+    AllowOverride All
+</Directory>
+
 
 
 2. Run composer
